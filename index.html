@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Library</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <span class="logo">Book Library</span>
+      <label class="switch">
+        <input type="checkbox" id="toggleDark" />
+        <span class="slider"></span>
+      </label>
+    </header>
+    <div class="container">
+      <div id="stats"></div>
+      <!-- Add Book Form -->
+      <form id="bookForm">
+        <input type="text" id="title" placeholder="Book Title" required />
+        <input type="text" id="author" placeholder="Author" required />
+        <input type="text" id="category" placeholder="Category" required />
+        <input type="url" id="cover" placeholder="Cover Image URL (optional)" />
+        <button type="submit">➕ Add Book</button>
+      </form>
+
+      <!-- Search -->
+      <input type="text" id="search" placeholder="🔎 Search books..." />
+      <button id="randomBook" class="accent-btn">Suggest a Random Book</button>
+
+      <!-- Book List -->
+      <h2>Library</h2>
+      <ul id="bookList" class="card-list"></ul>
+
+      <!-- Borrowed Books -->
+      <h2>Borrowed Books</h2>
+      <ul id="borrowedList" class="card-list"></ul>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
