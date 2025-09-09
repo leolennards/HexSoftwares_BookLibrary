@@ -20,7 +20,7 @@ This project was created as part of my **Hex Softwares Internship – Web Develo
 
 ## 📂 Features
 
-✅ Add new books with the Title, Author, Category, and Cover Image URL 
+✅ Add new books with the Title, Author, Category, and Cover Image URL  
 ✅ Borrow and return books with one click  
 ✅ Search functionality (filter by title, author, or category)  
 ✅ Data persistence with **localStorage** (books remain after reload)  
